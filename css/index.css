@@ -1,0 +1,239 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+/* DEBUT CSS */
+
+/*Font nom/prénom*/
+
+
+body {
+    width: auto;
+    height: auto;
+    /*démarcation couleur en biais*/
+    background: linear-gradient(40deg, #b1939d 50%, #fcfafb 50%);
+    background-repeat: no-repeat;
+    /*retire les scrool*/
+    /* overflow-y:hidden;
+     overflow-x:hidden; */
+}
+
+.accueil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: auto;
+    height: auto;  */
+    flex-wrap: wrap;
+}
+
+
+.photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 800px;
+    /* flex-wrap: wrap;  */
+}
+
+img {
+    display: flex;
+    width: 400px;
+    height: 400px;
+    /*permet à la photo de couvrir dans les bonnes dimensions le contenant*/
+    object-fit: cover;
+    /*photo en noir et blanc*/
+    filter: grayscale(100%) contrast(120%);
+    box-shadow: 10px 15px 25px 10px rgba(26, 25, 28, 0.88);
+    -webkit-box-shadow: 3px 12px 24px -3px rgba(26, 25, 28, 0.88);
+    -moz-box-shadow: 3px 12px 24px -3px rgba(26, 25, 28, 0.88);
+    transition: all .4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    border-radius: 50%;
+}
+
+.photo:hover img {
+    box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, .1);
+}
+
+.nom_texte {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 50%;
+    height: 500px;
+}
+
+.h1 {
+    width: auto;
+    height: 100px;
+    display: flex;
+    /* justify-content: ;  */
+    font-family: "DawningofaNewDay", serif, sans-serif;
+    font-size: 65px;
+    letter-spacing: 4px;
+}
+
+.texte {
+    display: flex;
+    width: 90%;
+    height: 100px;
+
+}
+
+.texte_accueil {
+    /* font-family: "Flamenco-Light", serif, sans-serif; */
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 4px;
+    line-height: 70px;
+}
+
+
+
+/*@media all and(max-width: 640px) {
+    .nom_texte {
+        display: none;
+       width: auto;
+       height: auto;
+       display: flex;
+       flex-direction: column;
+       flex-wrap: wrap; 
+       background: #1b1bc2; 
+   } 
+}  */

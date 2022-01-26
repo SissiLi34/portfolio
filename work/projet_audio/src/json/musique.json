@@ -1,0 +1,30 @@
+[
+    {
+        "artiste": "Ella Fitzerald",
+        "titre": "'Summertime'",
+        "src_musique": "ella.mp3",
+        "image": "ella.jpg",
+        "clip": "ella_clip.mp4"
+    },
+    {
+        "artiste": "Glenn Miller",
+        "titre": "'In the mood'",
+        "src_musique": "glenn.mp3",
+        "image": "glenn.jpg",
+        "clip": "glenn.mp4"
+    },
+    {
+        "artiste": "Louis Amstrong",
+        "titre": "'What a wonderful world'",
+        "src_musique": "louis.mp3",
+        "image": "louis.jpg",
+        "clip": "louis.mp4"
+    },
+    {
+        "artiste": "Chet Baker",
+        "titre": "'Almost blue'",
+        "src_musique": "chet.mp3",
+        "image": "chet.jpg",
+        "clip": "chet.mp4"
+    }
+]

@@ -1,0 +1,10 @@
+@font-face {
+    font-family: "DawningofaNewDay";
+    src: url("../imageAndFont/font/DawningofaNewDay.ttf")format("truetype");
+}
+
+/*Font générale*/
+@font-face {
+    font-family: "Flamenco-Light";
+    src: url("../imageAndFont/font/Flamenco-Light.ttf")format ("truetype");
+}
