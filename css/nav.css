@@ -1,0 +1,270 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+} 
+
+
+
+
+/*DEBUT CSS*/
+
+/*font prénom/nom*/
+@font-face {
+  font-family: "DawningofaNewDay";
+  src: url("source/DawningofaNewDay.ttf")format("truetype");
+}
+
+/*font générale*/
+@font-face {
+  font-family: "Flamenco-Light";
+  src: url("source/Flamenco-Light.ttf")format ("truetype");
+}
+
+
+html,
+body {
+  height: 100%
+}
+
+nav {
+  width: 100%;
+  height: 80px;
+  background: #B98F9C;
+  box-shadow: 3px 12px 24px -3px rgba(26, 25, 28, 0.88);
+  -webkit-box-shadow: 3px 12px 24px -3px rgba(26, 25, 28, 0.88);
+  -moz-box-shadow: 3px 12px 24px -3px rgba(26, 25, 28, 0.88);
+}
+
+nav .main_pages {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/*texte nav*/
+nav .main_pages a {
+  display: flex;
+  /* align-items: center;*/
+  justify-content: center;
+  text-decoration: none;
+  font-family: "Flamenco-Light", serif, sans-serif;
+  color: white;
+  letter-spacing: 4px;
+  font-size: 1.1em;
+}
+
+a {
+  margin-top: 25px;
+}
+
+
+/* EFFET DE TREMBLEMENT */
+nav a:hover {
+  color: #463636;
+  animation: spring 300ms ease-out;
+  text-shadow: 0 -1px 0 #887979;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+@keyframes spring {
+  15% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1.2, 1.1);
+  }
+
+  40% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(0.95, 0.95);
+  }
+
+  75% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1.05, 1);
+  }
+
+  100% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1, 1);
+  }
+}
+/* FIN EFFET TREMBLEMENT */
+
+/*burger*/
+label,
+#toggle {
+  display: none;
+}
+
+@media all and (max-width: 640px) {
+  nav {
+    height: 100%;
+  }
+
+  nav .main_pages {
+    display: none;
+    flex-direction: column;
+    background: #c2c2ca;
+    height: 260px;
+  }
+
+  nav .main_pages a {
+    width: 50%;
+  }
+.survol_nav_top {
+  text-align: center;
+}
+.survol_nav_bottom {
+  margin-bottom: 20px;
+}
+
+  label {
+    width: 100%;
+    /*pour re donner une hauteur au label*/
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 40px;
+    color: rgb(238, 232, 235);
+    cursor: pointer;
+  }
+
+  #toggle:checked+.main_pages {
+    display: flex;
+  }
+
+}
