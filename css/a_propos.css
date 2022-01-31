@@ -166,19 +166,23 @@ body {
     }
 }
 
+/* ENGLOBE TOUT */
 .block_principal {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
+/* BLOCK DE PRESENTATION TEXTE */
 .presentation {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 800px;
     height: 600px;
-    margin-top: 90px;
+    margin: 50px 0 50px 0;
+
+    padding: 60px;
     background: rgb(233, 229, 229);
     font-family: "Flamenco-Light", serif, sans-serif;
     color: #463636;
@@ -187,18 +191,16 @@ body {
     text-align: center;
 }
 
-p {
-  margin: 20px 30px 0px 30px;  
-  line-height: 20px;
-  /* margin-left: 15px; */
-}
+.paragraphe {
+    margin: 20px 30px 0px 30px;
+    line-height: 30px;
 
+}
 
 .block_droit {
     width: 400px;
     height: 400px;
 }
-
 
 .contact {
     display: flex;
@@ -209,8 +211,7 @@ p {
     font-family: "Flamenco-Light", serif, sans-serif;
     color: #463636;
     letter-spacing: 4px;
-    font-size: 1.8em;
-    margin-top: 30px;
+    font-size: 30px;
 }
 
 .tel {
@@ -222,11 +223,9 @@ p {
     font-family: "DawningofaNewDay", serif, sans-serif;
     color: #463636;
     letter-spacing: 4px;
-    font-size: 1.8em;
+    font-size: 35px;
     margin-top: 10px;
 }
-
-
 
 .lien_linkedin {
     display: flex;
@@ -237,17 +236,17 @@ p {
     font-family: "Flamenco-Light", serif, sans-serif;
     color: #887979;
     letter-spacing: 2px;
-    font-size: 1.5em;
+    font-size: 30px;
     margin-top: 30px;
+    text-decoration: none;
 }
-
 
 .effets:hover {
     color: #B98F9C;
     animation: spring 300ms ease-out;
     text-shadow: 0 -1px 0 #887979;
     font-weight: bold;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 @keyframes spring {
@@ -281,6 +280,6 @@ p {
     font-family: "Flamenco-Light", serif, sans-serif;
     color: #463636;
     letter-spacing: 4px;
-    font-size: 1.8em;
+    font-size: 30px;
     margin-top: 10px;
 }
