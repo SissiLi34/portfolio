@@ -180,56 +180,8 @@ body {
 }
 
 
-/* CONTIENT IMAGE DE LA COVER DANS LE HTML */
-/* MAIS N AGIT SUR RIEN */
-/* .box { */
-/* width: 100%; */
-/* height: 200px; */
-/* margin: -3rem 0 0; */
-/* transform: translateY(10vh) skew(60deg, -15deg) rotateX(40deg); */
-/* box-shadow: -5px 5px 30px 1px rgba(black, 0.3);
-  transition: all 300ms ease;
-} */
+/* CONCEPTION DU TEXTE A L'INTERIEUR DE LA CARD */
 
-
-/* AVEC ELLE PAS DE TEXTE NI D EFFET */
-
-/* @import url(https://fonts.googleapis.com/css?family=Raleway:400,200,300,800); */
-
-/* TAILLE DE LA CARD INUTILE POUR LES MIENNES */
-/* figure.texte {
-  font-family: 'Raleway', Arial, sans-serif;
-  color: #fff;
-  position: relative;
-  overflow: hidden;
-  margin: 10px;
-  min-width: 220px;
-  max-width: 310px;
-  max-height: 220px;
-  width: 100%;
-  background: #000000;
-  text-align: center;
-}
-
-figure.texte * {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}  */
-
-
-
-
-
-
-
-/* JE NE SAIS PAS ENCORE */
-
-/* figure.texte img {
-  opacity: 1;
-  width: 100%;
-  -webkit-transition: opacity 0.35s;
-  transition: opacity 0.35s;
-}  
 
 
 /* POSITIONNE LE BLOC TEXTE */
@@ -305,8 +257,11 @@ figure.texte.btn p {
   color: #ffffff;
 }
 figure.texte:hover img {
-  opacity: 0.35;
+  opacity:
+   0.35;
 }  */
+
+
 figure.texte:hover figcaption h2 {
   opacity: 1;
   -webkit-transform: translate3d(0%, 0%, 0);
@@ -334,8 +289,7 @@ figure.texte:hover figcaption::before {
 
 
 
-
-/* new projet ok */
+/* CONCEPTION DES CARDS SANS TEXTE */
 
 .container {
   display: flex;
@@ -390,19 +344,6 @@ figure.texte:hover figcaption::before {
   transform: rotateY(-135deg);
 }
 
-/* pas utile */
-/* .card .details {
-  position: absolute;
-  top: 20%;
-  left: 0;
-  box-sizing: border-box;
-  padding: 20px;
-  z-index: -1;
-} */
-
-
-
-
 
 
 /* bouton lien projet */
@@ -411,13 +352,11 @@ figure.texte:hover figcaption::before {
   display: flex;
   justify-content: center;
   text-transform: uppercase;
-  /* border: 2px solid #64595d; */
   border: 2px solid #46093e;
   background: #d1aeba;
   margin-top: 40px;
   margin-left: 110px;
   margin-right: 80px;
-
   font-size: 15px;
   letter-spacing: 5px;
   padding: 8px;
