@@ -180,6 +180,7 @@ body {
 }
 
 
+
 /* CONCEPTION DU TEXTE A L'INTERIEUR DE LA CARD */
 
 
@@ -372,3 +373,5 @@ figure.texte:hover figcaption::before {
   color: #fffeff;
   background: #46093e;
 }
+
+/*MAJ de 16h28*/
